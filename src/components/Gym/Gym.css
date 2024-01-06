@@ -1,0 +1,90 @@
+.gym-container{
+    margin-top: 1rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.gym-blur-1{
+    width: 32rem;
+    height: 23rem;
+    top: 7rem;
+    left: 1rem;
+}
+
+.gym-blur-2{
+    width: 32rem;
+    height: 23rem;
+    top: 7rem;
+    left: 45rem;
+}
+
+.workouts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.lift{
+    display: flex;
+    flex-direction: column;
+    background: var(--caloryCard);
+    color: white;
+    gap: 1rem;
+    padding: 1.5rem;
+    width: 12rem;
+}
+
+.hd{
+    text-align: center;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    padding: 1.2rem;
+    background-color: gray
+}
+
+.lift:hover{
+    background: var(--planCard);
+    cursor: pointer;
+}
+
+.workoutheader{
+    font-style: italic;
+    font-size: 1.1rem;
+    text-decoration-line: underline;
+}
+
+@media screen and (max-width:768px){
+    .gym-header{
+        font-size: 2.5rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gym-header>span:nth-of-type(2){
+        font-size: 1.5rem;
+    }
+
+    .workouts{
+        flex-direction: column;
+    }
+
+    .gym-blur-1{
+        width:25rem;
+        height: 15rem;
+        padding-top: 50rem;
+    }
+
+    .gym-blur-2{
+        width: 32rem;
+        height: 30rem;
+        top: 95rem;
+        left: -5rem;
+    }
+}

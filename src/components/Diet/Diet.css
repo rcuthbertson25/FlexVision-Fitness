@@ -1,0 +1,26 @@
+.diet-container{
+    margin-top: 1rem;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+.diet-container>span{
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    .diet-header{
+        font-size:2.5rem;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .diet-header>span:nth-of-type(2){
+        font-size: 1.5rem;
+    }
+}
